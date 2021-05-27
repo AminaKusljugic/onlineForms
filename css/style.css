@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+#adminOutputForm, #formsOutputForm{
+  margin-top: 15px;
+}
+
+input[type=text],input[type=number], select{
+  width: 20%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 15px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 15px;
+}
+
+#adminSearchInput{
+  float: left;
+  width: 50%;
+  height: 40px;
+  margin-top: 6px;
+}
+
+
+#adminSearchBtn, #formsSearchBtn, #save{
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 6px;
+  border:#45a049;
+  cursor: pointer;
+  float: right;
+  height: 40px;
+  width: 10%;
+  font-size: 15px;
+}
+
+#add{
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 6px;
+  border:#45a049 ;
+  cursor: pointer;
+  float: left;
+  height: 40px;
+  width: 10%;
+  font-size: 15px;
+
+}
+
+#adminSearchBtn:hover, #formsSearchBtn:hover, #add:hover, #save:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.adminBtn {
+  float: left;
+  width: 50%;
+  height: 45px;
+  margin-top: 6px;
+  font-size: 20px;
+}
+
+.formsBtn {
+  float: left;
+  width: 50%;
+  height: 45px;
+  margin-top: 6px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .adminBtn, .formsBtn, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

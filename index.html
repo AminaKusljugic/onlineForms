@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My App</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+  <!--NAV-->
+  <div class="container">
+    <button type="button" class="adminBtn" style="color: gray" onclick="changeView.apply(this)">
+      Administration
+    </button>
+    <button type="button" id="formsButton" class="formsBtn" onclick="changeView.apply(this)">
+      Forms
+    </button>
+    <br /><br/>
+  </div>
+
+  <!--ADMINISTRATION VIEW-->
+  <div id="administration" class="container">
+    <div id="searchDiv">
+      <input type="text " id="adminSearchInput" />
+      <button type="button" id="adminSearchBtn">Search</button>
+    </div>
+    <br><br>
+    <div id="adminOutputForm"></div>
+  </div>
+
+  <!--FORMS VIEW-->
+  <div id="forms" class="container" style="display: none">
+    <div id="inputFields">
+      <label for="formsSearchInput">Form name</label>
+      <input type="text" id="formsSearchInput" />
+
+      <label for="formsVersionInput">Version</label>
+      <input type="text" id="formsVersionInput" />
+
+      <button type="button" id="formsSearchBtn">Search</button>
+    </div>
+    <form name="formsOutputForm" id="formsOutputForm"></form>
+  </div>
+
+</body>
+
+</html>
